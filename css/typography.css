@@ -7,6 +7,11 @@
   text-align: left;
 }
 
+.btn-save-theme.theme-saved:after {
+  content: "Done!!!";
+  font-size: 0.5rem;
+}
+
 /* End of Calculator Menu */
 
 /* Calculator Display */

@@ -33,24 +33,85 @@
 }
 
 .default-theme .has-sub-menu .sub-menu {
-  background: #9ea2a7;
+  background: #cbd3dd;
 }
 
-/* Night Theme */
-body.night-theme {
+.default-theme .has-sub-menu .sub-menu .btn-save-theme {
+  color: #ffffff;
+  background: #006ff1;
+}
+.default-theme .calculator-menu.show-menu .menu-navigation-list {
+  box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 0.1);
+}
+.default-theme .has-sub-menu .sub-menu {
+  box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+span.theme-selector-indicator.theme-light {
+  border-color: #00152c;
+}
+span.theme-selector-indicator.active {
+  background-color: #006ff1;
+  border-color: #006ff1;
+  box-shadow: 0px 0px 10px 0.1px #006ff1;
+}
+
+.btn-save-theme.theme-saved {
+  background: #0aab89 !important;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Dark Theme */
+body.dark-theme {
   background: #374353;
 }
 
-.night-theme .calculator-header .calc-display {
+.dark-theme .calculator-header .calc-display {
   color: #ffffff;
 }
-.night-theme button.calc-btn {
+.dark-theme button.calc-btn {
   color: #ffffff;
   box-shadow: -1px -1px 4px 0.1px rgba(245, 245, 245, 0.1),
     1px 1px 4px 0.1px rgba(0, 0, 0, 0.2);
   background: #374353;
 }
 
-.night-theme button.calc-btn:not(.btn-numeric-element) {
+.dark-theme button.calc-btn:not(.btn-numeric-element) {
   color: #9a9fa3;
+}
+
+.dark-theme .calculator-header .calc-latest-history-display,
+.dark-theme .calculator-header .calc-history-display ul,
+.dark-theme .calculator-menu .menu-navigation-list {
+  background-color: #9a9fa3;
+}
+.dark-theme .show-full-history .calc-history-display ul {
+  box-shadow: 2px 2px 1px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .show-full-history .calc-history-display ul > li:nth-child(odd) {
+  background-color: #bdccdf;
+}
+
+.dark-theme .has-sub-menu .sub-menu {
+  background: #cbd3dd;
+}
+
+.dark-theme .has-sub-menu .sub-menu .btn-save-theme {
+  color: #ffffff;
+  background: #006ff1;
+}
+.dark-theme .calculator-menu.show-menu .menu-navigation-list {
+  box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 0.1);
+}
+.dark-theme .has-sub-menu .sub-menu {
+  box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .menu-branding {
+  color: #e9eef4;
+}
+
+.dark-theme .btn-menu-navigation {
+  color: #e9eef4;
 }

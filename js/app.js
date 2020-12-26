@@ -116,7 +116,7 @@ class Operation{
         return newArray
     }
     toString(){
-        result = "";
+        var result = "";
         if(this.operatorType() == "binary"){
             result = this.operandA + " " + this.operator + " " + this.operandB
         }else if(this.operatorType() == "unary"){
