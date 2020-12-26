@@ -1,0 +1,29 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.calculator-header .calc-display {
+  text-align: right;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.calculator-header .calc-history-display-container .history-expand-toggler {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+}
+
+.show-full-history .calc-history-display ul,
+.show-full-history .calc-history-display ul li {
+  text-align: left;
+  font-size: 0.65rem;
+}
+.calculator-header .calc-latest-history-display {
+  font-size: 0.5rem;
+  text-align: right;
+}
+
+button.calc-btn {
+  font-size: 1rem;
+  font-weight: 500;
+}

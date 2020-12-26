@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+button {
+  border-width: 0px;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.calculator-container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+.calculator {
+  display: inline-block;
+  margin: auto;
+}
+.calculator-header .calc-history-display-container {
+  position: relative;
+}
+.calculator-header .calc-history-display-container .history-expand-toggler {
+  position: absolute;
+  left: 3px;
+}
+.calculator-header
+  .calc-history-display-container
+  .history-expand-toggler:focus {
+  outline-width: 0;
+  border-width: 0;
+}
+.history-expand-toggler .toggle-icon {
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+}
+.toggle-icon.toggle-icon-show {
+  opacity: 1;
+}
+.toggle-icon.toggle-icon-hide {
+  opacity: 0;
+}
+.show-full-history .toggle-icon.toggle-icon-show {
+  opacity: 0;
+}
+.show-full-history .toggle-icon.toggle-icon-hide {
+  opacity: 1;
+}
+
+.calculator-header .calc-latest-history-display {
+  height: 13px;
+  padding: 0.5px 3px;
+  padding-left: 20px;
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.calculator-header .calc-history-display ul {
+  overflow: auto;
+  height: 200px;
+}
+.calculator-header .calc-history-display {
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  border-radius: 0px 0px 3px 3px;
+  top: -100vh;
+}
+
+.show-full-history .calc-history-display ul {
+  transform: translateY(100vh);
+  height: 200px;
+  margin-top: 13px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 0px 0px 3px 3px;
+  width: 100%;
+  padding: 5px 0px;
+}
+.show-full-history .calc-history-display ul li {
+  padding: 0px 10px;
+}
+.calculator-header .calc-display {
+  max-width: 250px;
+  max-height: 85px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.calculator-body {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+button.calc-btn {
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 10px;
+}
+.calculator-body .calc-basic-operators > div > button.calc-btn {
+  display: block;
+}
