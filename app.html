@@ -26,19 +26,38 @@
                 <h2 class="menu-branding">SimCaltoris</h2>
               </div>
               <div>
-                <div>
+                <div class="btn-menu-navigation-container">
                   <button class="btn-menu-navigation">
-                    <span>&#9776;</span>
+                    <span class="btn-icon-onhide">&#9776;</span>
+                    <span class="btn-icon-onshow">x</span>
                   </button>
                 </div>
-                <div class="menu-navigation-list">
-                  <ul></ul>
+                <div class="menu-navigation-list-container">
+                  <ul class="menu-navigation-list">
+                    <li>
+                      <a
+                        ><span>&#10515;</span>&nbsp; Download Calculations
+                        History</a
+                      >
+                    </li>
+                    <li class="has-sub-menu">
+                      <a>Change Theme</a>
+                      <ul class="sub-menu">
+                        <li><a>Light Theme</a></li>
+                        <li><a>Dark Theme</a></li>
+                        <li><a>Save Theme</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
           <div class="calc-history-display-container">
-            <button class="history-expand-toggler">
+            <button
+              class="history-expand-toggler"
+              title="View Calculations history"
+            >
               <span class="toggle-icon toggle-icon-show">&#11167;</span>
               <span class="toggle-icon toggle-icon-hide">&#11165;</span>
             </button>

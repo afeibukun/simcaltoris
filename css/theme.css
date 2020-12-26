@@ -1,3 +1,10 @@
+.calculator-header .calculator-menu .btn-menu-navigation span {
+  font-weight: 700;
+}
+.calculator-header .calculator-menu .btn-menu-navigation {
+  background: transparent;
+}
+
 .calculator-header .calc-history-display-container .history-expand-toggler {
   background: transparent;
 }
@@ -13,7 +20,8 @@
 }
 
 .default-theme .calculator-header .calc-latest-history-display,
-.default-theme .calculator-header .calc-history-display ul {
+.default-theme .calculator-header .calc-history-display ul,
+.default-theme .calculator-menu .menu-navigation-list {
   background-color: #e9eef4;
 }
 .default-theme .show-full-history .calc-history-display ul {
@@ -22,6 +30,10 @@
 
 .default-theme .show-full-history .calc-history-display ul > li:nth-child(odd) {
   background-color: #bdccdf;
+}
+
+.default-theme .has-sub-menu .sub-menu {
+  background: #9ea2a7;
 }
 
 /* Night Theme */

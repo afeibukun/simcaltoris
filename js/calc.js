@@ -9,6 +9,12 @@ let historyContainer = document.querySelector('.calc-history-display-container')
 var btnToggleHistoryDisplay = document.querySelector('.history-expand-toggler');
 btnToggleHistoryDisplay.addEventListener("click", toggleHistoryDisplay);
 
+var btnNavigationMenu = document.querySelector('.btn-menu-navigation');
+btnNavigationMenu.addEventListener("click", toggleMenu);
+
+var btnSubMenu = document.querySelector('.has-sub-menu>a');
+btnSubMenu.addEventListener("click", toggleSubMenu);
+
 var numericElementList = document.querySelectorAll('.btn-numeric-element')
 numericElementList.forEach(function(numericElement){
     numericElement.addEventListener("click", handleNumber);
@@ -93,4 +99,12 @@ function renderCalculatorHistory(){
 
 function toggleHistoryDisplay(){
     historyContainer.classList.toggle("show-full-history");
+}
+
+function toggleMenu(){
+    document.querySelector('.calculator-menu').classList.toggle("show-menu");
+}
+
+function toggleSubMenu(){
+    document.querySelector('.has-sub-menu').classList.toggle("show-sub-menu");
 }

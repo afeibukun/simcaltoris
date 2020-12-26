@@ -1,6 +1,15 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+/* Calculator Menu */
+.calculator-header .calculator-menu .menu-navigation-list li {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+/* End of Calculator Menu */
+
+/* Calculator Display */
 .calculator-header .calc-display {
   text-align: right;
   font-size: 1.75rem;
@@ -22,6 +31,8 @@
   font-size: 0.5rem;
   text-align: right;
 }
+
+/* End of  Calculator Display */
 
 button.calc-btn {
   font-size: 1rem;
